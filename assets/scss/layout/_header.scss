@@ -1,0 +1,249 @@
+header {
+  margin-top: 30px;
+  .logo {
+    width: 70px;
+    height: auto;
+    // transform: rotate(-2deg);
+    margin-top: 6px;
+  }
+
+  .navbar {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      li{
+        padding: 10px;
+      }
+  
+      .content {
+        .dropdown {
+          margin-top: 20px;
+          position: absolute;
+          left: 0;
+          right: 0;
+  
+          .cont {
+            display: none;
+            padding: 0 105px;
+          }
+  
+          div {
+            display: flex;
+          }
+  
+          li {
+            display: block;
+            padding: 13px 30px;
+          }
+  
+          .dropdown-list {
+            display: none;
+  
+            li {
+              img {
+                width: 150px;
+                height: auto;
+                margin-left: -10px;
+              }
+            }
+          }
+        }
+     
+        &:hover {
+          .dropdown {
+            border: 1px solid gainsboro;
+            background-color: #fff;
+            .dropdown-list {
+              display: block;
+            }
+  
+            .cont {
+              display: block;
+            }
+  
+            .padding {
+              border-right: 1px solid gainsboro;
+            }
+          }
+        }
+      }
+  
+      .different {
+        font-weight: 200;
+      }
+  
+      li {
+        font-weight: bolder;
+        font-size: 16px;
+  
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+  .col-3 {
+    .icons {
+      display: flex;
+      margin-top: 8px;
+    }
+  
+    .input {
+      margin-top: 10px;
+      input {
+        position: relative;
+        left: 20px;
+        padding: 7px;
+        background-color: rgb(231, 228, 228);
+        border: none;
+        color: black;
+        width:180px;
+      }
+  
+      .bi-search {
+        position: absolute;
+        margin-top: 5px;
+        margin-left: -5px;
+        font-size: 17px;
+      }
+    }
+  
+    .icon {
+      font-size: 20px;
+      margin-left: 20px;
+      padding-top: 16px;
+  
+      .bi-person {
+       margin: 10px;
+        position: relative;
+  
+        span {
+          position: absolute;
+          top: -12px;
+          left: 13px;
+          font-size: 12px;
+          font-weight: bolder;
+          background-color: orange;
+          border-radius: 1000px;
+          text-align: center;
+          padding: 5px;
+          width: 12px;
+          height: 2;
+        }
+      }
+
+      .bi-heart{
+        margin: 6px;
+      }
+
+      .bi-bag{
+        margin: 6px;
+      }
+    }
+  }
+  
+  .responsive-icon {
+    display: none;
+  }
+  
+  .responsive-logo {
+    display: none;
+  }
+  
+  .right-icon {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  header {
+    .navbar {
+      ul {
+        display: none;
+      }
+    }
+
+    .logo {
+      display: none;
+    }
+
+    .icons {
+      .input {
+        display: none;
+      }
+
+      .icon {
+        display: none;
+      }
+    }
+
+    .container {
+      .col-6 {
+        .responsive-logo {
+          display: inline-block;
+          display: flex;
+          align-items: baseline;
+          justify-content: center;
+          margin-top: -33px;
+        }
+      }
+
+      .col-2 {
+        .responsive-icon {
+          display: inline-block;
+          font-size: 22px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10px;
+          .bi-heart{
+            margin-left: 3px;
+          }
+        }
+      }
+
+      .col-4 {
+        .right-icon {
+          display: inline-block;
+          font-size: 20px;
+          display: flex;
+          align-items: baseline;
+          justify-content: center;
+          padding: 10px;
+
+          .bi-person {
+            position: relative;
+            margin-left: -25px;
+
+            span {
+              position: absolute;
+              top: -16px;
+              left: -0.1px;
+              font-size: 12px;
+              font-weight: bolder;
+              background-color: orange;
+              border-radius: 1000px;
+              text-align: center;
+              padding: 4px;
+              width: 12px;
+              height: 2;
+            }
+          }
+
+          .bi-heart {
+            padding: 5px;
+          }
+
+          .bi-bag {
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+
+}

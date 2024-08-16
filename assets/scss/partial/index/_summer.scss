@@ -1,0 +1,92 @@
+#summer {
+  margin-top: 60px;
+  .about-summer {
+    ul {
+      list-style: none;
+      // padding: 0  60px;
+
+      li {
+        font-size: 16px;
+        .bold {
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          color: black;
+        }
+        a {
+          display: inline-block;
+          text-decoration: none;
+          color: rgb(105, 104, 104);
+          margin-top: 13px;
+          // text-align: center;
+        }
+      }
+    }
+  }
+  .work {
+    display: none;
+  }
+
+  .work-respon {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #summer {
+    margin-top: -10px;
+
+    .about-summer {
+      display: none;
+    }
+
+    .work-respon {
+      display: none;
+    }
+
+    .work {
+      display: inline-block;
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+
+      i {
+        font-size: 20px;
+        color: black;
+      }
+
+      span {
+        display: inline-block;
+        margin-top: 25px;
+        font-size: 18px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+        font-weight: bolder;
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  #summer {
+    .work {
+      display: none;
+    }
+
+    .work-respon {
+      display: flex;
+      margin-top: 50px;
+
+      p {
+        border-bottom: 2px solid black;
+        margin-top: 25px;
+        font-size: 18px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+footer {
+  margin-top: 20px;
+  background-color: rgb(62, 61, 61);
+  padding: 35px;
+  color: #fff;
+  .end {
+    text-align: center;
+    margin: 10px;
+
+    .text {
+      border-right: 1px solid #fff;
+      padding: 7px;
+      .svg {
+        background-color: blue;
+        padding: 3px;
+        border-radius: 5px;
+      }
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+  .adidas{
+    text-align: center;
+  }
+
+  .terms{
+    display: none;
+  }
+
+  .united{
+    display: none;
+  }
+
+  .respon{
+    display: none;
+  }
+
+}
+
+
+@media(max-width:900px){
+  footer{
+    margin-top: -10px;
+
+    .united{
+      text-align: center;
+     
+      font-size: 16px;
+      span{
+        color: #fff;
+      }
+    }
+    .end{
+      .text{
+        display: none;
+      }
+    }
+
+
+    .united{
+      display: flex;
+      justify-content: center;
+      
+    }
+
+    .terms{
+      display: flex;
+      justify-content: center;
+    }
+
+    .respon{
+      display: inline-block;
+      display: flex;
+      text-align: center;
+    
+      svg {
+        background-color: blue;
+        padding: 3px;
+        border-radius: 5px;
+        fill: #fff;
+      }
+     }
+  }
+ 
+ 
+}
